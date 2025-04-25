@@ -12,7 +12,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.css-1xxoti7-MuiPaper-root {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
+  padding: 24px;
+  height: 35vw !important ;
+  width: 44vw;
+}
+.css-1hi3kjv-MuiTypography-root {
+  background-color: bisque;
+}
+.css-1blvszr-MuiButtonBase-root-MuiButton-root {
+  margin-bottom: 19px !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
