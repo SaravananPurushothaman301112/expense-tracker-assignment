@@ -15,5 +15,9 @@ mongoose.connect(process.env.MONGODB_URI)
 const expenseRoutes = require('./routes/expenses');
 app.use('/api/expenses', expenseRoutes);
 
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to My Expense Tracker App!</h1><p>Server is running and connected to MongoDB.</p>');
+});
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server is up and running on port ${PORT}. Visit http://localhost:${PORT} to see the message.`));
